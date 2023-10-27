@@ -24,8 +24,8 @@
             echo '<p>Nome: ' . $user['usu_nome'] . '</p>';
             echo '<p>Email: ' . $user['usu_email'] . '</p>';
             echo '<p>Thumb: ' .'<img src="'.$user['usu_foto_perfil'] . '" style="width:10%;" /></p>';
-            echo '<button>Atualizar</button>';
-            echo '<button>Excluir</button>';
+            echo '<a href="atualizar.php?id=' . $user['usu_id'] . '"><button>Atualizar</button></a>';
+            echo '<a href="excluir.php?id=' . $user['usu_id'] . '"><button>Excluir</button></a>';
             echo '</div>';
             echo '<hr>';
         }
